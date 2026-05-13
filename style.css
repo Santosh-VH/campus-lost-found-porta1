@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #597ebe;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #edb347;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+input, textarea, select {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.item img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.items-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+}
+
+.claim-btn {
+    background: green;
+}
+
+.reject-btn {
+    background: crimson;
+}
+
+.admin-panel {
+    border-left: 5px solid red;
+}

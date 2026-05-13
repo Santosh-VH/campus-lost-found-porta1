@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Lost & Found Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Campus Lost & Found Portal</h1>
+        <p>Report and Find Lost Items Easily</p>
+    </header>
+
+    <section class="container">
+        <div class="card">
+            <h2>Student Registration</h2>
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="contact" placeholder="Contact">
+            <input type="text" id="department" placeholder="Department">
+            <button onclick="registerUser()">Register</button>
+            <p id="userMessage"></p>
+        </div>
+
+        <div class="card">
+            <h2>Post Lost / Found Item</h2>
+            <input type="text" id="itemName" placeholder="Item Name">
+            <textarea id="description" placeholder="Description"></textarea>
+            <input type="text" id="location" placeholder="Location">
+            <select id="status">
+                <option value="Lost">Lost</option>
+                <option value="Found">Found</option>
+            </select>
+            <input type="file" id="image">
+            <button onclick="addItem()">Post Item</button>
+        </div>
+
+        <div class="card">
+            <h2>Search Items</h2>
+            <input type="text" id="search" placeholder="Search by keyword" onkeyup="searchItems()">
+        </div>
+
+        <div class="card">
+            <h2>Lost & Found Items</h2>
+            <div id="itemsList"></div>
+        </div>
+
+        <div class="card admin-panel">
+            <h2>Admin Panel</h2>
+            <button onclick="clearAll()">Remove All Posts</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
